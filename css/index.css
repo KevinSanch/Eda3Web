@@ -1,6 +1,5 @@
 /* @media screen and (min-width:)
 Flex: 0 1 calc(30% - 1em); */
-
 body {
   font-size: 1rem;
   font-family: sans-serif;
@@ -19,9 +18,9 @@ header {
   /* Moviendo el logo y dandole tamaño */
   position: absolute;
   top: 1%;
-  left: 2%;
-  height: 70px;
-  width: 150px;
+  left: 3%;
+  height: 65px;
+  width: 70px;
 }
 
 #eslogan {
@@ -313,4 +312,9 @@ footer {
   height: 200px;
   grid-column: 5/6;
   grid-row: 1/1;
+}
+
+#sliderCovid {
+  /* Color del enlace en el slider */
+  color: #0083ac
 }
