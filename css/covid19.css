@@ -1,0 +1,286 @@
+/* Maximo ancho de la página */
+main {
+  max-width: 1000px;
+  display: grid;
+}
+
+/* Aplicado grid a todo el main */
+.container {
+  display: grid;
+  justify-content: center;
+}
+
+/* Descripcion principal del COVID-19 */
+.enfermedad {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+/* Titulo del sección informativa del covid-19 */
+.enfermedad-titulo {
+  grid-column: span 2;
+  display: grid;
+  justify-content: center;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+/* Titulo COVID-19 */
+.enfermedad-titulo h3 {
+  background: rgb(39, 130, 175);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* Imagen de seccion informativa COVID-19 */
+.enfermedad-img {
+  display: grid;
+  justify-content: center;
+}
+
+/* Redondeado de puntas */
+.enfermedad-img img {
+  border-radius: 20px;
+}
+
+/* Estilo texto de la sección informativa del COVID-19 */
+.enfermedad-descripcion {
+  display: grid;
+  justify-content: center;
+  align-content: flex-start;
+  background-color: rgba(0, 149, 255, 0.034);
+  border-radius: 5px;
+  color: rgb(14, 15, 97);
+}
+
+/* Sección formulario, explicación del formulario y síntomas comunes. */
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Título principal sección del formulario */
+.formulario-titulo {
+  grid-column: span 4;
+  grid-row: span 1;
+  display: grid;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+/* Estilo del título */
+.formulario-titulo h3 {
+  background: rgb(39, 130, 175);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* Estilo de texto informativo del formulario */
+.formulario-explicacion {
+  grid-column: span 2;
+  grid-row: span 1;
+  display: grid;
+  justify-content: center;
+  align-content: flex-start;
+  background-color: rgba(0, 149, 255, 0.034);
+  border-radius: 5px;
+  color: rgb(14, 15, 97);
+  padding-bottom: 100px;
+}
+
+/* Estilo de la seccion de inputs del formulario */
+.formulario-input {
+  grid-column: span 2;
+  grid-row: span 3;
+  padding-left: 50px;
+  background-color: rgba(0, 149, 255, 0.034);
+  border-radius: 5px;
+  color: rgb(14, 15, 97);
+}
+
+/* Espaciado entre inputs */
+.formulario-input input {
+  margin-bottom: 15px;
+}
+
+/* Estilo botón enviar */
+#enviar {
+  color: rgb(255, 255, 255);
+  background: rgb(39, 130, 175);
+  border-radius: 20px;
+  padding: 10px;
+  display: block;
+}
+
+/* Imágenes de acompañamiento al formulario COVID-19 (sintomas comunes) */
+.formulario-sintomas {
+  display: grid;
+  justify-content: flex;
+  grid-column: span 2;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr;
+}
+
+/* Titulo de imagenes de síntomas */
+.formulario-sintomas-titulo {
+  grid-column: span 2;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  padding-bottom: 20px;
+}
+
+/* Titulo principal seccion de hospital mas cercano */
+.hospital-title h3 {
+  color: white;
+  background: rgb(39, 130, 175);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* Titulo del hospital mas cercano al paciente. */
+.formulario-sintomas-titulo b {
+  background: rgb(39, 130, 175);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* Se achican imagenes de sintomas comunes */
+.formulario-sintomas div img {
+  width: 240px;
+}
+
+/* Se acomodan imagenes de sintomas comunes */
+.formulario-sintomas-img-1,
+.formulario-sintomas-img-2 {
+  display: grid;
+  justify-content: center;
+  grid-column: span 1;
+}
+
+/* Acomodamiento imagen de sintomas comunes */
+.formulario-sintomas-img-3 {
+  display: grid;
+  justify-content: center;
+  grid-column: span 2;
+}
+
+/* Acomodamiento imagenes de medidas de precaucion */
+.medidas-precaucion {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px 1fr 1fr;
+  color: rgb(255, 255, 255);
+}
+
+/* Se achican imagenes de medidas de precaucion */
+.medidas-img img {
+  padding-top: 25px;
+  width: 200px;
+}
+
+/* Acomodamiento titulo de medidas de precaución */
+.medidas-title {
+  grid-column: span 4;
+  grid-row: span 1;
+}
+
+/* Estilo titulo de medidas de precaucion */
+.medidas-title h4 {
+  color: white;
+  background: rgb(39, 130, 175);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* Acomodamiento de imagenes de medidas de precaucion */
+.medidas-img {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+/* Acomodamiento seccion de hospital mas cercano */
+.hospital-cercano {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px 1fr;
+  padding: 20px;
+}
+
+/* Acomodamiento titulo principal de hospital mas cercano */
+.hospital-title {
+  display: grid;
+  grid-column: span 2;
+  grid-row: span 1;
+  justify-content: center;
+}
+
+/* Acomodamiento seccion del hospital mas cercano */
+.hospital-mas-cercano {
+  display: grid;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+/* Estilos titulo del hospital mas cercano */
+.hospital-mas-cercano h5 {
+  width: 120px;
+  padding: 5px;
+}
+
+/* Mas estilos seccion del hospital mas cercano */
+.hospital-mas-cercano p,
+.hospital-mas-cercano h5 {
+  background-color: rgba(0, 149, 255, 0.034);
+  border-radius: 5px;
+  color: rgb(14, 15, 97);
+}
+
+/* Tamaño de imagen de hospital mas cercano */
+.hospital-mas-cercano img {
+  width: 200px;
+}
+
+/* Tamaño de imagen mapa del hospital mas cercano */
+.hospital-mapa img {
+  width: 480px;
+}
+
+/* Estilos de mensajes de error del formulario */
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
+
+/* Estilos de mensajes de exito del formulario */
+.exito {
+  color: green;
+  font-size: 0.8rem;
+}
+
+/* Estilos de mensajes de informacion de sintomas compatibles del formulario */
+.mensajeSintomas {
+  color: blue;
+  font-size: 0.8rem;
+}
+
+/* Color, ubicación, tamaño de texto y demás del texto que sale al no tener activado el script */
+#noscript {
+  background-color: rgba(116, 209, 255, 0.8);
+  display: flex;
+  top: 20%;
+  border-radius: 50px;
+  position: fixed;
+  z-index: 2;
+  text-align: center;
+}
+
+#noscript p {
+  margin: 40px;
+  font-size: 3rem;
+}

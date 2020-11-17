@@ -1,0 +1,6 @@
+.img_inicio img {
+  /* Asignando el lugar a la imagen y su tamaño */
+  width: 800px;
+  height: auto;
+  margin: auto;
+}

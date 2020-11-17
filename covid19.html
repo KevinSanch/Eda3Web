@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lo primero es tu salud</title>
+  <!-- enlaces a CSS -->
+  <link rel="stylesheet" type="text/css" href="css\index.css">
+  <link rel="stylesheet" type="text/css" href="css\covid19.css">
+</head>
+
+<body>
+
+<div id="noscript">
+  <noscript>
+    <p>La página que estás viendo requiere el uso de JavaScript. </p>
+    <p> Si lo has deshabilitado intencionadamente, por favor, vuelve a activarlo.</p>
+  </noscript>
+</div>
+
+  <!-- Header -->
+  <header>
+    <!-- Logotipo en header -->
+    <div id="img_header">
+      <img src="img/Logo.png">
+    </div>
+    <!-- Slogan en header -->
+    <div id="eslogan">
+      <p> Lo primero es tu salud. </p>
+    </div>
+    <!-- Buscador en header -->
+    <div class="busc_enferm_header">
+      <form action="#" method="post" target="_self">
+        <!-- Opciones predefinidas desplegables en buscador -->
+        <datalist id="lista_enfermedades">
+          <option value="Miopía">
+          <option value="Bronquitis">
+          <option value="Diabetes">
+          <option value="Caries">
+          <option value="COVID-19">
+        </datalist>
+        <!-- Caja del buscador -->
+        <input type="text" list="lista_enfermedades" size="60">
+        <input type="image" id="lupa_busc" src="img/Lupa.png" />
+      </form>
+    </div>
+  </header>
+  <!-- Navegacion de secciones -->
+  <nav class="nav_paginas">
+    <ul>
+      <li><a href="index.html"> Inicio </a></li>
+      <li><a href="enfermedades.html"> Enfermedades </a></li>
+      <li><a href="vacunacion.html"> Vacunación </a></li>
+      <li><a href="hospitales.html"> Hospitales </a></li>
+      <li><a href="contacto.html"> Contacto </a></li>
+    </ul>
+  </nav>
+
+  <!-- Container principal -->
+  <div class="container">
+    <main>
+
+      <!-- Titulo, imagen y texto principal, sobre el COVID-19 -->
+      <section class="enfermedad">
+        <div class="enfermedad-titulo">
+          <h3>COVID-19</h3>
+        </div>
+        <div class="enfermedad-img">
+          <img src="img/img-enfermedad.png" alt="imagen enfermedad">
+        </div>
+        <div class="enfermedad-descripcion">
+          <p>Los síntomas más habituales de la COVID-19 son la fiebre, la tos seca y el cansancio. Otros síntomas menos frecuentes que afectan a algunos pacientes son los dolores y molestias, la congestión nasal, el dolor de cabeza, la conjuntivitis,
+            el dolor de garganta, la diarrea, la pérdida del gusto o el olfato y las erupciones cutáneas o cambios de color en los dedos de las manos o los pies. Estos síntomas suelen ser leves y comienzan gradualmente.
+          <p>
+            La COVID-19 afecta de distintas maneras en función de cada persona. La mayoría de las personas que se contagian presentan síntomas de intensidad leve o moderada, y se recuperan sin necesidad de hospitalización.
+          </p>
+          </p>
+        </div>
+      </section>
+
+      <!-- Titulo del formulario de COVID-19, explicación del funcionamiento, imágenes de síntomas, y el formulario en sí -->
+      <section class="formulario">
+        <div class="formulario-titulo">
+          <h3>Formulario de detección (Test) de coronavirus (COVID-19)</h3>
+        </div>
+        <div class="formulario-explicacion">
+          <p>¡Hola usuario! Si tenés síntomas de COVID-19 o has estado en contacto con una persona afectada deberías hacer un control y seguimiento diario de tus síntomas</p>
+          <p>Esta aplicación te permitirá hacer un seguimiento de la evolución de los síntomas y te dará las indicaciones y consejos a seguir en cada caso.
+            El uso de este servicio supone la aceptación de los términos y la política de privacidad descritos en <a href="#"> términos y condiciones</a>.
+          </p>
+        </div>
+        <!-- Inputs del formulario -->
+        <div class="formulario-input">
+          <h4>Formulario</h4>
+          <form id="formulario" action="#" name="formulario" method="post">
+            <input type="text" id="apellido" name="apellido" size="35" placeholder="Apellido" />
+
+            <input type="text" id="nombre" name="nombre" size="35" placeholder="Nombre" />
+
+            <input type="text" id="dni" name="dni" size="35" placeholder="DNI" />
+
+            <input type="tel" id="telefono" name="telefono" size="35" placeholder="Teléfono" />
+
+            <input type="text" id="ciudad" name="ciudad" size="35" placeholder="Ciudad" />
+
+            <p><label for="sexo">Sexo:</label></p>
+            <input name="sexo" type="radio" value="femenino" />Femenino
+            <input name="sexo" type="radio" value="masculino" />Masculino
+
+
+            <p><label for="ha-viajado">¿Has viajado al exterior de la República Argentina?</label></p>
+            <input name="viaje" type="radio" value="si" id="siViaje" />Sí
+            <input name="viaje" type="radio" value="no" id="noViaje" />No
+
+            <div id="pais-visitado">
+              <p><label>País visitado: </label></p>
+              <select name="pais" id="pais-visitado2">
+                <option value="0" selected="selected">Seleccionar país</option>
+                <option value="1">Bolivia</option>
+                <option value="2">Brasil</option>
+                <option value="3">Chile</option>
+                <option value="4">Paraguay</option>
+                <option value="5">Uruguay</option>
+              </select>
+            </div>
+
+            <p><b>Por favor indica los síntomas que presentas: </b></p>
+
+            <p><label for="fiebre">¿Tuviste fiebre mayor a 38 grados?</label></p>
+            <input name="fiebre" type="radio" value="si" />Sí
+            <input name="fiebre" type="radio" value="no" />No
+
+            <p><label for="dolor-de-cabeza">¿Tuviste dolor de cabeza?</label></p>
+            <input name="dolor-cabeza" type="radio" value="si" />Sí
+            <input name="dolor-cabeza" type="radio" value="no" />No
+
+            <p><label for="tos">¿Tuviste tos persistente?</label></p>
+            <input name="tos" type="radio" value="si" />Sí
+            <input name="tos" type="radio" value="no" />No
+
+            <p><label for="dolor-garganta">¿Tuviste dolor de garganta?</label></p>
+            <input name="dolor-garganta" type="radio" value="si" />Sí
+            <input name="dolor-garganta" type="radio" value="no" />No
+
+            <p><label for="dificultad-para-respirar">¿Tuviste dificultad para respirar?</label></p>
+            <input name="dificultad-para-respirar" type="radio" value="si" id="siDificultadRespirar" />Sí
+            <input name="dificultad-para-respirar" type="radio" value="no" id="noDificultadRespirar" />No
+
+            <input id="direccion" type="text" name="direccion" placeholder="Dirección" size="35" />
+
+            <!-- Se agrega un botón para la aceptación de términos y condiciones
+            <div class="condiciones">
+              <input type="checkbox" name="condiciones" id="condiciones">
+              <label for="condiciones">He leído y acepto los <a href="#"> términos y condiciones</a>.</label>
+            </div>  -->
+            <input id="enviar" type="button" value="Enviar" />
+            <!-- Mensajes se implementan con javascript en los siguientes divs, según exito o error en completado de formulario -->
+            <div id="mensajeExito" class="exito"></div>
+            <div id="mensajeError" class="error"></div>
+            <br>
+            <div id="mensajeSintomas" class="mensajeSintomas"></div>
+          </form>
+        </div>
+
+        <!-- Imagenes de síntomas -->
+        <div class="formulario-sintomas">
+          <div class="formulario-sintomas-titulo">
+            <b>Síntomas</b>
+          </div>
+          <div class="formulario-sintomas-img-1"><img src="img/23-fiebre-tos.png" alt="" id="formulario-img-1"></div>
+          <div class="formulario-sintomas-img-2"><img src="img/24-fiebre-dolor-garganta.png" alt="" id="formulario-img-2"></div>
+          <div class="formulario-sintomas-img-3"><img src="img/25-fiebre-dificultad-respirar.png" alt="" id="formulario-img-3"></div>
+        </div>
+      </section>
+
+      <!-- Sección de recomendaciones, con imágenes. -->
+      <section class="medidas-precaucion">
+        <div class="medidas-title">
+          <h4>MEDIDAS DE PRECAUCIÓN</h4>
+        </div>
+        <div class="medidas-img">
+          <img src="img/14-lavarse-manos.png" alt="">
+        </div>
+        <div class="medidas-img">
+          <img src="img/15-estornudar.png" alt="">
+        </div>
+        <div class="medidas-img">
+          <img src="img/16-tocar-nariz.png" alt="">
+        </div>
+        <div class="medidas-img">
+          <img src="img/17-ventilar.png" alt="">
+        </div>
+        <div class="medidas-img">
+          <img src="img/18-limpiar-objetos.png" alt="">
+        </div>
+        <div class="medidas-img">
+          <img src="img/19-permanecer-domicilio.png" alt="">
+        </div>
+        <div class="medidas-img">
+          <img src="img/20-reducir-contacto.png" alt="">
+        </div>
+        <div class="medidas-img">
+          <img src="img/21-no-compartir-mate.png" alt="">
+        </div>
+      </section>
+
+      <!-- Sección de hospital mas cercano, con su titulo, descripcion del hospital mas cercano y mapa -->
+      <section class="hospital-cercano">
+        <!-- Título -->
+        <div class="hospital-title">
+          <h3>Hospital más cercano especializado en la enfermedad</h3>
+        </div>
+        <!-- Datos hospital -->
+        <div class="hospital-mas-cercano">
+          <h5 id="h5">Hospital Posadas</h5>
+          <p>Tel: 4444-5555
+            <br>
+            Dirección: Avenida Presidente Arturo U. Illia s/n y Marconi Morón 386.
+            <br>
+            Ciudad: El Palomar, Provincia de Buenos Aires.
+          </p>
+          <!-- Imagen hospital -->
+          <img src="img/hospital-posadas.png" alt="">
+        </div>
+        <!-- Mapa Hospital -->
+        <div class="hospital-mapa">
+          <img src="img/hospital-posadas-mapa.png" alt="">
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+
+    <!-- Footer -->
+    <div class="texto_al_pie">
+      <!-- Datos de integrantes -->
+      <div class="datos_grupo">
+        <li class="negrita_inf"> Datos del grupo: </li>
+        <ol>
+          <li> Kevin Fabián Sánchez, 38.428.510</li>
+          <li> Ignacio Damián González, 39.978.468 </li>
+          <li> Iván Lautaro Carreño, 43.053.717 </li>
+        </ol>
+      </div>
+      <!-- Menu de navegacion del footer -->
+      <div class="menu_inferior">
+        <li class="negrita_inf"> Menu inferior: </li>
+        <ol>
+          <li><a href="enfermedades.html"> Enfermedades </a></li>
+          <li><a href="vacunacion.html"> Vacunas </a></li>
+          <li><a href="hospitales.html"> Hospitales </a></li>
+          <li><a href="contacto.html"> Contacto </a></li>
+        </ol>
+      </div>
+      <!-- Enlaces a redes sociales -->
+      <div class="redes_inferior">
+        <li class="negrita_inf"> Redes sociales: </li>
+        <ol>
+          <div class="img_redes">
+            <div id="img_facebook">
+              <a href="#"><img src="img/Logo Facebook.png"></a>
+            </div>
+            <div id="img_whatsapp">
+              <a href="#"><img src="img/Logo Whatsapp.png"></a>
+            </div>
+            <div id="img_twitter">
+              <a href="#"><img src="img/Logo Twitter.png"></a>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- Script al JS de la sección, con sus respectivas validaciones de datos de formulario -->
+    <script src="js/covid19.js"></script>
+  </footer>
+</body>
+
+</html>

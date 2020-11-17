@@ -1,0 +1,129 @@
+.wrapper {
+  /* Aplicando grid a todo el main */
+  display: grid;
+  grid-template-columns: 20% 20% 25% 20% 20%;
+}
+
+/* Moviendo el formulario, dandole color al texto, al fondo y demás de su posicionamiento */
+.formulario {
+  margin-top: 10%;
+  margin-left: -20%;
+}
+
+.formulariocontacto {
+  grid-column: 2;
+  margin-right: 50px;
+  z-index: 1;
+}
+
+.textocontactoformulario p {
+  text-align: center;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  background: rgb(39, 130, 175);
+  width: 170px;
+  padding: 10px;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.textoydatos li {
+  margin-left: 20%;
+}
+
+.formulario ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#nomyapel, #correo, #telefono, #asunto, #mensaje {
+  /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+     Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+  font: 1em sans-serif;
+  /* Tamaño uniforme del campo de texto */
+  width: 500px;
+  box-sizing: border-box;
+  /* Hacer coincidir los bordes del campo del formulario */
+  border: 1px solid #999;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  margin-bottom: 5%;
+}
+
+#mensaje {
+  resize: none;
+  margin-bottom: 0px;
+}
+
+
+#boton_enviar_formulario {
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  width: 100px;
+  background: rgb(39, 130, 175);
+  color: white;
+}
+
+/* Posicionando los datos de contacto, colores y demás */
+.datoscontacto {
+  grid-column: 4;
+  margin-left: -150px;
+  border-left-color: grey;
+  border-left: 20px;
+}
+
+.textocontacto p {
+  text-align: center;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  background: rgb(39, 130, 175);
+  width: 170px;
+  padding: 10px;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 5%;
+}
+
+.ubicacionymapa {
+  grid-column: 1/ span 5;
+  margin: auto;
+  padding-top: 100px;
+  margin-top: -4%;
+  margin-bottom: 3%;
+}
+
+.textoubicacion p {
+  text-align: center;
+}
+
+.textoubicacion p {
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  background: rgb(39, 130, 175);
+  width: 120px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* Color, ubicación, tamaño de texto y demás del texto que sale al no tener activado el script */ 
+#noscript {
+  background-color: rgba(116, 209, 255, 0.8);
+  display: flex;
+  top: 20%;
+  border-radius: 50px;
+  position: fixed;
+  z-index: 2;
+  text-align: center;
+}
+
+#noscript p {
+  margin: 40px;
+  font-size: 3rem;
+}

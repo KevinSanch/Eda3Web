@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>Formulario de Contacto</title>
+	<link rel="stylesheet" type="text/css" href="css\index.css">
+	<link rel="stylesheet" type="text/css" href="css\contacto.css">
+</head>
+
+<body>
+
+	<div id="noscript">
+	  <noscript>
+	    <p>La página que estás viendo requiere el uso de JavaScript. </p>
+	    <p> Si lo has deshabilitado intencionadamente, por favor, vuelve a activarlo.</p>
+	  </noscript>
+	</div>
+
+	<header>
+		<div id="img_header">
+			<img src="img/Logo.png">
+		</div>
+
+		<div id="eslogan">
+			<p> Lo primero es tu salud. </p>
+		</div>
+
+		<div class="busc_enferm_header">
+			<form action="#" method="post" target="_self">
+				<datalist id="lista_enfermedades">
+					<option value="Miopía">
+					<option value="Bronquitis">
+					<option value="Diabetes">
+					<option value="Caries">
+					<option value="COVID-19">
+				</datalist>
+				<input type="text" list="lista_enfermedades" size="60">
+				<input type="image" id="lupa_busc" src="img/Lupa.png" />
+			</form>
+		</div>
+	</header>
+
+	<nav class="nav_paginas">
+		<ul>
+			<li><a href="index.html"> Inicio </a></li>
+			<li><a href="enfermedades.html"> Enfermedades </a></li>
+			<li><a href="vacunacion.html"> Vacunación </a></li>
+			<li><a href="hospitales.html"> Hospitales </a></li>
+			<li><a href="contacto.html"> Contacto </a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<div class="wrapper">
+			<section class="formulariocontacto">
+				<span class="textocontactoformulario">
+					<p>Contacto</p>
+				</span>
+
+				<div class="formulario">
+					<form methord="post" autocomplete="off">
+						<!--Arreglar el requerimiento al enviar -->
+						<label for="nomyapel">Nombre y apellido *</label>
+						<input type="text" id="nomyapel" maxlength="100" placeholder="Ingrese nombre y apellido" required>
+
+						<label for="correo">Correo electrónico *</label>
+						<input type="email" id="correo" placeholder="Ingrese correo electrónico" required>
+
+						<label for="telefono">Teléfono</label>
+						<input type="tel" id="telefono" placeholder="Ingrese teléfono" required>
+
+						<label for="asunto" class="titulo_contacto">Asunto *</label>
+						<input type="text" id="asunto" maxlength="100" required>
+
+						<label for="mensaje" class="titulo_contacto">Mensaje</label>
+						<textarea maxlength="1000" id="mensaje" required></textarea>
+						<p id="caracteresRestantes">0/1000</p>
+
+						<button type="submit" value="Enviar" id="boton_enviar_formulario">ENVIAR</button>
+
+					</form>
+				</div>
+			</section>
+
+			<section class="datoscontacto">
+				<div class="textoydatos">
+					<div class="textocontacto">
+						<p>Datos de contacto</p>
+					</div>
+					<ul>
+						<li>
+							Direccion
+						</li>
+						<li>
+							Teléfonos
+						</li>
+						<li>
+							Celular
+						</li>
+						<li>
+							Email
+						</li>
+						<li>
+							Web
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="ubicacionymapa">
+				<span class="textoubicacion">
+					<p>
+						Ubicación
+					</p>
+				</span>
+				<div class="imagenmapa">
+					<img src="img/foto_mapa_hospitales.png">
+				</div>
+			</section>
+		</div>
+
+
+
+	</main>
+
+	<footer>
+
+		<div class="texto_al_pie">
+			<div class="datos_grupo">
+				<li class="negrita_inf"> Datos del grupo: </li>
+				<ol>
+					<li> Kevin Fabián Sánchez, 38.428.510</li>
+					<li> Ignacio Damián González, 39.978.468 </li>
+					<li> Iván Lautaro Carreño, 43.053.717 </li>
+				</ol>
+			</div>
+
+			<div class="menu_inferior">
+				<li class="negrita_inf"> Menu inferior: </li>
+				<ol>
+					<li><a href="enfermedades.html"> Enfermedades </a></li>
+					<li><a href="vacunacion.html"> Vacunas </a></li>
+					<li><a href="hospitales.html"> Hospitales </a></li>
+					<li><a href="contacto.html"> Contacto </a></li>
+				</ol>
+			</div>
+
+			<div class="redes_inferior">
+				<li class="negrita_inf"> Redes sociales: </li>
+				<ol>
+					<div class="img_redes">
+						<div id="img_facebook">
+							<a href="#"><img src="img/Logo Facebook.png"></a>
+						</div>
+						<div id="img_whatsapp">
+							<a href="#"><img src="img/Logo Whatsapp.png"></a>
+						</div>
+						<div id="img_twitter">
+							<a href="#"><img src="img/Logo Twitter.png"></a>
+						</div>
+					</div>
+			</div>
+		</div>
+
+	</footer>
+
+	<script type="text/javascript" src="js\contacto.js"></script>
+</body>
+
+</html>

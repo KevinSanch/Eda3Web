@@ -1,0 +1,29 @@
+main {
+  /* Ordenando main con grid */
+  display: grid;
+  grid-template-columns: 18% 25% 15% 20% 20%;
+}
+
+/* Ubicacion del texto y del mapa */
+.textoubicacion p {
+  text-align: center;
+}
+
+.textoubicacion p {
+  margin: auto;
+  margin-top: -2%;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  background: rgb(39, 130, 175);
+  width: 30%;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.mapa {
+  grid-column: 1/ span 5;
+  margin: auto;
+  margin-bottom: 3%;
+  padding-top: 50px;
+}

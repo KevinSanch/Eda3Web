@@ -1,0 +1,316 @@
+/* @media screen and (min-width:)
+Flex: 0 1 calc(30% - 1em); */
+
+body {
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+header {
+  /* Fondo del header y tamaños */
+  background-color: rgb(0, 115, 199);
+  margin-top: -10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 70px;
+}
+
+#img_header img {
+  /* Moviendo el logo y dandole tamaño */
+  position: absolute;
+  top: 1%;
+  left: 2%;
+  height: 70px;
+  width: 150px;
+}
+
+#eslogan {
+  /* posición del eslogan, color y tamaño */
+  color: white;
+  font-size: 1.3rem;
+  position: absolute;
+  left: 14%;
+}
+
+.busc_enferm_header {
+  /* Posición de la caja de busqueda */
+  position: absolute;
+  top: 3%;
+  left: 35%;
+}
+
+.busc_enferm_header input {
+  /* Tamaño de la caja de busqueda */
+  height: 30px;
+  width: 140%;
+}
+
+#lupa_busc {
+  /* Tamaño de la lupa de busqueda, la posición, color de fondo y radio de los bordes */
+  background: #0083ac;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 0px;
+  left: 141.2%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+nav {
+  /* Color del fondo de la barra de navegación y tamaño */
+  background-color: #0083ac;
+  padding: 1px;
+  margin-top: -10px;
+}
+
+.nav_paginas ul {
+  /* Dandole la forma de barra de navegación y centrandolo */
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav_paginas a {
+  /* Color de las letras, tamaño, quitando decoración y también distanciandolos */
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.nav_paginas a:hover {
+  /* Color de texto en el nav con el puntero arriba */
+  background-color: rgba(0, 109, 199, 0.45);
+  color: rgb(74, 217, 255);
+}
+
+footer {
+  /* Fondo en el footer y tamaño */
+  background-color: rgb(0, 115, 199);
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+.negrita_inf {
+  /* Negrita en los titulos de los footer */
+  font-weight: bold;
+  list-style: none;
+}
+
+.texto_al_pie li a {
+  /* Color del texto de los li a (Enlaces) en el footer */
+  color: white;
+  text-decoration: none;
+}
+
+.texto_al_pie li a:hover {
+  /* Color del texto de los li a (Enlaces) en el footer con el puntero arriba */
+  color: rgb(74, 217, 255);
+}
+
+.texto_al_pie li {
+  /* Color del texto en el footer de los li */
+  color: white;
+}
+
+.texto_al_pie ol {
+  /* Sacandole los números a la lista */
+  list-style: none;
+}
+
+.texto_al_pie {
+  /* implementando grid */
+  display: grid;
+  grid-template-columns: 0.12fr 0.2fr 0.1fr 0.2fr 0.1fr 0.2fr;
+}
+
+.datos_grupo {
+  /*posicionando los elementos */
+  grid-column: 2/4;
+}
+
+.menu_inferior {
+  grid-column: 4/5;
+}
+
+.redes_inferior {
+  grid-column: 6/7;
+}
+
+.img_redes {
+  /* Implementando grid */
+  display: grid;
+  grid-template-columns: 15% 15% 15%;
+}
+
+.img_redes img {
+  /* Altura y ancho de las imagenes de las redes en el footer */
+  margin-left: -100%;
+  height: 30px;
+  width: 30px;
+}
+
+#img_facebook {
+  /* Posicionando individualmente la imagen de Facebook */
+  grid-column: 1/2;
+}
+
+#img_whatsapp {
+  /* Posicionando individualmente la imagen de Whatsapp */
+  grid-column: 2/3;
+}
+
+#img_twitter {
+  /* Posicionando individualmente la imagen de Twitter */
+  grid-column: 3/4;
+}
+
+.img_inicio img {
+  /* Centrando la imagen de enfermeros del inicio y dandole tamaño */
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  height: 320px;
+  border-radius: 20px;
+}
+
+#titulo {
+  /* Centrando el título (Hospital), dandole color, color de fondo, dandole borde al fondo, tamaño y moviendolo */
+  text-align: center;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  background: rgb(39, 130, 175);
+  width: 120px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+}
+
+.text_enfermedades ul {
+  /* Dandole forma a las opciones como a la barra de navegación y centrandola */
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.text_enfermedades a {
+  /* Cambiandoles el color a los enlaces */
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+#text_enf {
+  /*Dandole un fondo con borde a cada uno particularmente y cambiando la posición
+  PD: No pude implementar GRID acá, más allá de ponerselo a la clase que contiene, no pude, no funcionaba, no entiendo la razón */
+  background-color: #0083ac;
+  position: absolute;
+  text-align: center;
+  left: 15%;
+  border-radius: 10px;
+  width: 150px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#text_vac {
+  /* Dandole un fondo con borde a cada uno particularmente y cambiando la posición */
+  background-color: #0083ac;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  border-radius: 10px;
+  margin-left: -3%;
+  width: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#text_map {
+  /* Dandole un fondo con borde a cada uno particularmente y cambiando la posición */
+  background-color: #0083ac;
+  position: absolute;
+  text-align: center;
+  left: 70%;
+  border-radius: 10px;
+  width: 200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.text_enfermedades a:hover {
+  /* Cambiando el color al pasar el cursor */
+  color: rgb(103, 218, 249);
+}
+
+.imgs_enfermedades {
+  /* implementando grid con sus columnas */
+  display: grid;
+  grid-template-columns: 15% 20% 10% 20% 7% 20%;
+}
+
+.imgs_enfermedades img {
+  /* Tamaño de las imagenes */
+  height: 150px;
+}
+
+#img_enf {
+  /* Cambiando la posición de cada una individualmente */
+  grid-column: 2/3;
+}
+
+#img_vac {
+  /* Cambiando la posición de cada una individualmente */
+  grid-column: 4/5;
+}
+
+#img_map {
+  /* Cambiando la posición de cada una individualmente */
+  margin-top: 3%;
+  grid-column: 6/7;
+}
+
+.sec_num {
+  /* Poniendo el fondo, los margenes, color del texto de la parte del telefono y grid
+  PD: Por alguna razón no pude implementar el ROWS con % y no sé por qué*/
+  display: grid;
+  grid-template-columns: 5% 45% 5% 5% 15% 20%;
+  grid-template-rows: 200px;
+  background: #0083ac;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#text_sint {
+  /* Moviendo el  texto y cambiando la fuente */
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 7%;
+  font-size: 25px;
+}
+
+#text_tel {
+  /* Moviendo el  texto y cambiando la fuente */
+  font-size: 60px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 16%;
+  margin-left: 2%;
+}
+
+#text_num {
+  /* Moviendo el  texto y cambiando la fuente */
+  grid-column: 6/7;
+  font-size: 110px;
+  margin-top: 15%;
+}
+
+#img_tel {
+  /* Dandole el  tamaño y el lugar */
+  height: 200px;
+  grid-column: 5/6;
+  grid-row: 1/1;
+}
