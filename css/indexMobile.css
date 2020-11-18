@@ -9,14 +9,14 @@ header {
   margin-top: -10px;
   margin-bottom: 10px;
   padding-top: 10px;
-  padding-bottom: 70px;
+  padding-bottom: 110px;
 }
 
 #img_header img {
   /* Moviendo el logo y dandole tamaño */
   position: absolute;
-  top: 1%;
-  left: 3%;
+  top: 4%;
+  left: 6%;
   height: 65px;
   width: 70px;
 }
@@ -24,22 +24,22 @@ header {
 #eslogan {
   /* posición del eslogan, color y tamaño */
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   position: absolute;
-  left: 14%;
+  left: 30%;
 }
 
 .busc_enferm_header {
   /* Posición de la caja de busqueda */
   position: absolute;
-  top: 3%;
-  left: 38%;
+  top: 10%;
+  left: 30%;
 }
 
 .busc_enferm_header input {
   /* Tamaño de la caja de busqueda */
   height: 30px;
-  width: 120%;
+  width: 70%;
 }
 
 #lupa_busc {
@@ -49,7 +49,7 @@ header {
   height: 35px;
   position: absolute;
   top: 0px;
-  left: 121.2%;
+  left: 72.2%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -91,6 +91,7 @@ footer {
 
 .negrita_inf {
   /* Negrita en los titulos de los footer */
+  margin: auto;
   font-weight: bold;
   list-style: none;
 }
@@ -117,52 +118,25 @@ footer {
 }
 
 .texto_al_pie {
-  /* Implementando grid */
-  display: grid;
-  grid-template-columns: 0.12fr 0.2fr 0.1fr 0.2fr 0.1fr 0.2fr;
+  /* implementando flex */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.datos_grupo {
-  /* Posicionando con grid */
-  grid-column: 2/4;
+ /* Dejando todos los elementos igual posicionados */
+.menu_inferior li {
+  margin-left: -58%;
 }
 
-.menu_inferior {
-  /* Posicionando con grid */
-  grid-column: 4/5;
-}
-
-.redes_inferior {
-  /* Posicionando con grid */
-  grid-column: 6/7;
-}
-
-.img_redes {
-  /* Implementando grid */
-  display: grid;
-  grid-template-columns: 5% 20% 20% 20%;
+.redes_inferior li {
+  margin-left: -79%;
 }
 
 .img_redes img {
   /* Altura y ancho de las imagenes de las redes en el footer */
-  margin-left: -100%;
   height: 30px;
   width: 30px;
-}
-
-#img_facebook {
-  /* Posicionando con grid */
-  grid-column: 2/3;
-}
-
-#img_whatsapp {
-  /* Posicionando con grid */
-  grid-column: 3/4;
-}
-
-#img_twitter {
-  /* Posicionando con grid */
-  grid-column: 4/5;
 }
 
 #titulo {
@@ -178,27 +152,25 @@ footer {
   border-radius: 20px;
 }
 
-.text_enfermedades ul {
-  /* Dandole forma a las opciones como a la barra de navegación y centrandola */
-  display: flex;
-  justify-content: center;
-  list-style: none;
+.text_enfermedades {
+  /* Ocultando parte del html en mobile */
+  display: none;
 }
 
-.text_enfermedades a {
+.imgs_enfermedades a {
   /* Cambiandoles el color a los enlaces */
   text-decoration: none;
+  list-style: none;
   color: white;
   font-size: 20px;
 }
 
-.text_enfermedades {
-  /* Usando grid */
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+.imgs_enfermedades a:hover {
+  /* Cambiando el color al pasar el cursor */
+  color: rgb(103, 218, 249);
 }
 
-.text_enf li {
+.text_enfMobile li {
   /*Dandole un fondo con borde a cada uno particularmente y centrando texto */
   background-color: #0083ac;
   border-radius: 10px;
@@ -206,15 +178,12 @@ footer {
   width: 150px;
   padding-bottom: 5px;
   text-align: center;
+  margin: auto;
+  margin-top: -14%;
+  margin-bottom: 10%;
 }
 
-.text_enf {
-  /* posicionando grid */
-  grid-column: 1/3;
-  margin-left: -20px;
-}
-
-.text_vac li {
+.text_vacMobile li {
   /* Dandole un fondo con borde a cada uno particularmente y centrando texto */
   background-color: #0083ac;
   border-radius: 10px;
@@ -222,16 +191,12 @@ footer {
   margin: auto;
   padding-top: 5px;
   padding-bottom: 5px;
+  margin-top: -14%;
   text-align: center;
+  margin-bottom: 10%;
 }
 
-.text_vac {
-  /* posicionando grid */
-  grid-column: 3/4;
-  margin-left: -18px;
-}
-
-.text_map li {
+.text_mapMobile li {
   /* Dandole un fondo con borde a cada uno particularmente y centrando texto */
   background-color: #0083ac;
   border-radius: 10px;
@@ -239,12 +204,9 @@ footer {
   padding-top: 5px;
   padding-bottom: 5px;
   text-align: center;
-}
-
-.text_map {
-  /* posicionando grid */
-  grid-column: 4/6;
-  margin-left: -10px;
+  margin: auto;
+  margin-top: -14%;
+  margin-bottom: -20%;
 }
 
 .text_enfermedades a:hover {
@@ -252,45 +214,39 @@ footer {
   color: rgb(103, 218, 249);
 }
 
-.text_enfMobile, .text_vacMobile, .text_mapMobile {
-  /* Ocultando parte mobile */
-  display: none;
-}
-
 .imgs_enfermedades {
-  /* implementando grid con sus columnas */
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+  /* implementando flex */
+  display: flex;
+  flex-direction: column;
 }
 
 .imgs_enfermedades img {
   /* Tamaño de las imagenes */
-  height: 150px;
+  height: 100px;
 }
 
 #img_enf {
-  /*  Cambiando la posición con grid */
-  grid-column: 1/3;
+  /* Centrando la imagen y moviendola */
   margin: auto;
+  margin-bottom: 15%;
 }
 
 #img_vac {
-  /*  Cambiando la posición con grid */
-  grid-column: 3/4;
+  /* Centrando la imagen y moviendola */
   margin: auto;
+  margin-bottom: 15%;
 }
 
 #img_map {
-  /* Cambiando la posición con grid */
-  grid-column: 4/6;
+  /* Centrando la imagen y moviendola */
   margin: auto;
+  margin-bottom: 15%;
 }
 
 .sec_num {
-  /* Poniendo el fondo, los margenes, color del texto de la parte del telefono y grid */
-  display: grid;
-  grid-template-columns: 5% 45% 5% 5% 15% 20%;
-  grid-template-rows: 20px 20px 40px 40px 40px 40px;
+  /* Poniendo el fondo, los margenes, color del texto de la parte del telefono y flex */
+  display: flex;
+  flex-direction: column;
   background: #0083ac;
   margin-top: 50px;
   margin-bottom: 20px;
@@ -298,36 +254,39 @@ footer {
 }
 
 #text_sint {
-  /* Moviendo el texto, cambiando la fuente y poniendo grid */
-  grid-column: 2/3;
-  grid-row: 2/3;
-  font-size: 25px;
+  /* Moviendo el texto y cambiando la fuente */
+  margin: auto;
+  margin-top: 7%;
+  font-size: 20px;
 }
 
 #text_tel {
-  /* Moviendo el texto y cambiando la fuente y poniendo grid */
-  font-size: 60px;
-  grid-column: 2/3;
-  grid-row: 2/3;
-  margin-left: 2%;
+  /* Moviendo el texto y cambiando la fuente */
+  font-size: 50px;
+  margin: auto;
+  margin-top: 5%;
 }
 
 #text_num {
-  /* Moviendo el texto y cambiando la fuente y poniendo grid */
-  grid-column: 6/7;
-  grid-row: 1/2;
-  font-size: 110px;
-  margin-top: 15%;
+  /* Moviendo el texto y cambiando la fuente */
+  font-size: 90px;
+  margin: auto;
+  margin-top: 10%;
 }
 
 #img_tel {
-  /* Dandole el tamaño y el lugar con grid */
-  height: 200px;
-  grid-column: 4/5;
-  grid-row: 1/2;
+  /* Dandole el tamaño y el lugar */
+  height: 120px;
+  margin: auto;
+  margin-top: -2%;
 }
 
 #sliderCovid {
   /* Color del enlace en el slider */
   color: #0083ac
+}
+
+.container p {
+  /* Cambiando tamaño de la letra */
+  font-size: 12px;
 }

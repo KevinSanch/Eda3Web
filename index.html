@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <title>Lo primero es tu salud</title>
   <link rel="stylesheet" href="css\carrusel.css">
-  <link rel="stylesheet" href="css\index.css">
+  <link rel="stylesheet" media="(min-width: 1024px)" href="css\index.css">
+  <link rel="stylesheet" media="(min-width: 800px) and (max-width: 1023px)" href="css\indexPcLow.css">
+  <link rel="stylesheet" media="(max-width: 799px)" href="css\indexMobile.css">
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/carrusel.js"></script>
 </head>
@@ -38,6 +40,7 @@
 
   <main>
 
+    <!-- Contiene todas las imagenes del slider y descripciones -->
     <div class="container">
       <div class="camera_wrap">
         <div data-src="img/carrusel1.jpg">
@@ -72,21 +75,34 @@
       <p id="titulo"> Hospital </p>
       <div class="imgs_enfermedades">
         <img id="img_enf" src="img/Logo Enfermedad.png">
+        <a class="text_enfMobile" href="enfermedades.html">
+          <li class="text_enfMobile"> Enfermedades </li>
+        </a>
         <img id="img_vac" src="img/Logo Vacuna.png">
+        <a class="text_vacMobile" href="vacunacion.html">
+          <li class="text_vacMobile"> Vacunas </li>
+        </a>
         <img id="img_map" src="img/Logo Mapa.png">
+        <a class="text_mapMobile" href="hospitales.html">
+          <li class="text_mapMobile"> Mapa de hospitales </li>
       </div>
 
       <div class="text_enfermedades">
-        <ul>
-          <a href="enfermedades.html">
-            <li id="text_enf"> Enfermedades </li>
+        <ul class="text_enf">
+          <a class="text_enf" href="enfermedades.html">
+            <li class="text_enf"> Enfermedades </li>
           </a>
-          <a href="vacunacion.html">
-            <li id="text_vac"> Vacunas </li>
+        </ul>
+        <ul class="text_vac">
+          <a class="text_vac" href="vacunacion.html">
+            <li class="text_vac"> Vacunas </li>
           </a>
-          <a href="hospitales.html">
-            <li id="text_map"> Mapa de hospitales </li>
+        </ul>
+        <ul class="text_map">
+          <a class="text_map" href="hospitales.html">
+            <li class="text_map"> Mapa de hospitales </li>
           </a>
+        </ul>
       </div>
     </section>
 
@@ -102,7 +118,6 @@
   </main>
 
   <footer>
-    <!-- Ver si se puede arreglar el centrado vertical -->
     <div class="texto_al_pie">
       <div class="datos_grupo">
         <li class="negrita_inf"> Datos del grupo: </li>
