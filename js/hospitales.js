@@ -1,116 +1,96 @@
 $(document).ready(function() {	
 
-	//select all the a tag with name equal to modal
+	//Selecciona todas las etiquetas 'a' con el name que corresponda
 	$('a[name=infomoron]').click(function(e) {
-		//Cancel the link behavior
-		e.preventDefault();
 		
-		//Get the A tag
+		e.preventDefault();
 		var id = $(this).attr('href');
 	
-		//Get the screen height and width
+		//Guarda en variables la anchura de la ventana y altura del documento para la "mask"
 		var maskHeight = $(document).height();
 		var maskWidth = $(window).width();
-	
-		//Set heigth and width to mask to fill up the whole screen
+		//Realiza en CSS una pantalla negra
 		$('#mask').css({'width':maskWidth,'height':maskHeight});
 		
-		//transition effect		
+		//Efecto de transición del fondo oscuro
 		$('#mask').fadeIn(100);	
 		$('#mask').fadeTo("slow",0.8);	
 	
-		//Get the window height and width
+		//Guarda la anchura y la altura de la ventana donde se este viendo
 		var winH = $(window).height();
 		var winW = $(window).width();
               
-		//Set the popup window to center
+		//Coloca en CSS la posicion de la ventana POP-UP en el centro del documento
 		$(id).css('top',  winH/2-$(id).height()/2);
 		$(id).css('left', winW/2-$(id).width()/2);
 	
-		//transition effect
+		//Efecto de transición de la ventana POP-UP
 		$(id).fadeIn(850); 
 	
 	});
 	
-	//if close button is clicked
+	//Si el botón CERRAR se presiona
 	$('.window .close').click(function (e) {
-		//Cancel the link behavior
 		e.preventDefault();
 		
 		$('#mask').hide();
 		$('.window').hide();
 	});		
 	
-	//if mask is clicked
+	//Si el fondo oscuro se presiona
 	$('#mask').click(function () {
 		$(this).hide();
 		$('.window').hide();
-	});			
+	});
 
 	$(window).resize(function () {
 	 
  		var box = $('#boxes .window');
  
-        //Get the screen height and width
         var maskHeight = $(document).height();
         var maskWidth = $(window).width();
-      
-        //Set height and width to mask to fill up the whole screen
+
         $('#mask').css({'width':maskWidth,'height':maskHeight});
-               
-        //Get the window height and width
+
         var winH = $(window).height();
         var winW = $(window).width();
 
-        //Set the popup window to center
         box.css('top',  winH/2 - box.height()/2);
         box.css('left', winW/2 - box.width()/2);
 	 
 	});
 
+	
 
-	//select all the a tag with name equal to modal
 	$('a[name=modal]').click(function(e) {
-		//Cancel the link behavior
 		e.preventDefault();
-		
-		//Get the A tag
 		var id = $(this).attr('href');
 	
-		//Get the screen height and width
 		var maskHeight = $(document).height();
 		var maskWidth = $(window).width();
 	
-		//Set heigth and width to mask to fill up the whole screen
 		$('#mask').css({'width':maskWidth,'height':maskHeight});
-		
-		//transition effect		
+			
 		$('#mask').fadeIn(100);	
 		$('#mask').fadeTo("slow",0.8);	
-	
-		//Get the window height and width
+
 		var winH = $(window).height();
 		var winW = $(window).width();
-              
-		//Set the popup window to center
+
 		$(id).css('top',  winH/2-$(id).height()/2);
 		$(id).css('left', winW/2-$(id).width()/2);
-	
-		//transition effect
+
 		$(id).fadeIn(850); 
 	
 	});
-	
-	//if close button is clicked
+
 	$('.window .close').click(function (e) {
-		//Cancel the link behavior
 		e.preventDefault();
 		
 		$('#mask').hide();
 		$('.window').hide();
 	});		
-	
-	//if mask is clicked
+
 	$('#mask').click(function () {
 		$(this).hide();
 		$('.window').hide();
@@ -119,19 +99,15 @@ $(document).ready(function() {
 	$(window).resize(function () {
 	 
  		var box = $('#boxes .window');
- 
-        //Get the screen height and width
+
         var maskHeight = $(document).height();
         var maskWidth = $(window).width();
-      
-        //Set height and width to mask to fill up the whole screen
+
         $('#mask').css({'width':maskWidth,'height':maskHeight});
-               
-        //Get the window height and width
+
         var winH = $(window).height();
         var winW = $(window).width();
 
-        //Set the popup window to center
         box.css('top',  winH/2 - box.height()/2);
         box.css('left', winW/2 - box.width()/2);
 	 
