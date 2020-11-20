@@ -5,6 +5,8 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css\index.css">
 	<link rel="stylesheet" type="text/css" href="css\hospital.css">
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/hospitales.js"></script>
 	<title>Mapa de Hospitales</title>
 </head>
 
@@ -45,9 +47,62 @@
 	</nav>
 
 	<main>
+		<section class="listado">
+			<span>
+				<p class="textolistado">
+					Listado de hospitales con unidad de terapia intensiva
+				</p>
+			</span>
+			<div class="hospitales-mas-info">
+				<p class="nombres">Hospital Municipal de Hurlingham San Bernardino</p>
+				<a href="#infohurlingham" name="modal" class="ver-info">Ver informacion detallada</a>
+				<div id="boxes">
+					<div id="infohurlingham" class="window">
+						<h2>Hospital Municipal de Hurlingham San Bernardino</h2>
+						<p>Dirección: German Argerich 1650, Hurlingham, Provincia de Buenos Aires</p>
+						<p>Localidad: Hurlingham</p>
+						<p>Teléfono: 011-4452-1694</p>
+						<img id="moron-imagen" src="img/hurlingham.png">
+						<a href="#" class="close" />Cerrar</a>
+					</div>
+					<div id="mask"></div>
+				</div>
+
+				<p class="nombres">Sanatorio del Oeste Ituzaingó</p>
+				<a href="#infoituzaingo" name="modal" class="ver-info">Ver informacion detallada</a>
+				<div id="boxes">
+					<div id="infoituzaingo" class="window">
+						<h2>Sanatorio del Oeste Ituzaingó</h2>
+						<p>Dirección: Gral. Félix Olazábal 319, B1714 FZC, Provincia de Buenos Aires</p>
+						<p>Localidad: Ituzaingó</p>
+						<p>Teléfono: 0810-333-4411</p>
+						<a href="http://www.sanatoriodeloeste.com/" target="_blank" class="ir-a-web">Ir a página web</a>
+						<img id="moron-imagen" src="img/ituzaingo.png">
+						<a href="#" class="close" />Cerrar</a>
+					</div>
+					<div id="mask"></div>
+				</div>
+
+				<p class="nombres">Hospital de Morón</p>
+				<a href="#infomoron" name="modal" class="ver-info">Ver informacion detallada</a>
+				<div id="boxes">
+					<div id="infomoron" class="window">
+						<h2>Hospital de Morón</h2>
+						<p>Dirección: Dr. Rodolfo Monte 848, B1708 HPR, Provincia de Buenos Aires</p>
+						<p>Localidad: Morón</p>
+						<p>Teléfono: 011-4133-4100</p>
+						<a href="http://www.moron.gov.ar/nuestra-gestion/salud/hospital-de-moron/" target="_blank" class="ir-a-web">Ir a página web</a>
+						<img id="moron-imagen" src="img/moron.png">
+						<a href="#" class="close" />Cerrar</a>
+					</div>
+					<div id="mask"></div>
+				</div>
+			</div>
+		</section>
+
 		<section class="mapa">
-			<span class="textoubicacion">
-				<p>
+			<span>
+				<p class="textoubicacion">
 					Mapa de hospitales disponibles
 				</p>
 			</span>
@@ -56,7 +111,6 @@
 			</div>
 		</section>
 	</main>
-
 
 	<footer>
 
@@ -96,8 +150,6 @@
 					</div>
 			</div>
 		</div>
-
-
 
 	</footer>
 </body>
